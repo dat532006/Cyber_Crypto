@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cyber Crypto | Secure Crypto Exchange</title>
+    <meta
+      name="description"
+      content="Cyber Crypto is a responsive cryptocurrency exchange landing page built with HTML, Tailwind CSS, Flowbite, and custom CSS."
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -18,449 +21,334 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <nav
-        class="dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600"
-      >
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+    <header class="site-header">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+        <a href="#home" class="brand" aria-label="Cyber Crypto home">
+          <span class="brand__mark">
+            <i class="fa-solid fa-bolt"></i>
+          </span>
+          <span>Cyber Crypto</span>
+        </a>
+
+        <button
+          data-collapse-toggle="navbar-sticky"
+          type="button"
+          class="nav-toggle md:hidden"
+          aria-controls="navbar-sticky"
+          aria-expanded="false"
         >
-          <a
-            href="https://flowbite.com/"
-            class="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              src="https://flowbite.com/images/logo.svg"
-              class="h-8"
-              alt="Flowbite Logo"
-            />
-            <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-              >Cyber Crypto</span
-            >
-          </a>
-          <div
-            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-          >
-            <button
-              type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-              Get started
-            </button>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
-          </div>
-          <div
-            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-            id="navbar-sticky"
-          >
-            <ul
-              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                  aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Pages</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >Porfolio</a
-                >
-              </li>
-            </ul>
-          </div>
+          <span class="sr-only">Open main menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-sticky">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#platform">Platform</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
+
+        <a href="#platform" class="nav-cta hidden md:inline-flex">
+          Get started
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </nav>
     </header>
 
-    <!-- Carousel -->
-    <section class="py-[200px]">
-      <div class="container mx-auto grid md:grid-cols-2">
-        <div class="carousel__left space-y-10">
-          <h1 class="text-8xl font-bold">
-            Trsuted & Secure <span class="text-gradient">Crypto</span> Market
-            Exchange.
-          </h1>
-          <p class="text-2xl text-white opacity-75">
-            Already have a website? Try our hosting to alive it with
-            industry-leading load times.
-          </p>
-          <button class="btn-gradient">Start Trading</button>
-          <h1 class="text-7xl">A+ Rating</h1>
-          <p class="text-gray-500">
-            Avg rating 4.8 makes us world most best apps.
-          </p>
-        </div>
-        <div class="carousel__right">
-          <img src="./images/bank.png" alt="" />
-        </div>
-      </div>
-    </section>
+    <main>
+      <section id="home" class="hero">
+        <div class="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
+          <div class="hero__copy">
+            <h1>
+              Trusted & Secure
+              <span class="text-gradient">Crypto</span> Market Exchange.
+            </h1>
+            <p>
+              Trade digital assets through a modern exchange experience built
+              for speed, strong security, and clear portfolio visibility.
+            </p>
 
-    <!-- Platform -->
-    <section>
-      <div class="container mx-auto">
-        <div class="text-center">
-          <h1 class="text-6xl">
-            Trusted <span class="text-gradient">Cryptocurrency</span> Platform
-          </h1>
-          <p class="text-gray-500">
-            jano has a variety of features that make it the best place to start
-            trading
-          </p>
+            <div class="hero__actions">
+              <a href="#platform" class="btn-gradient">
+                Start Trading
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </a>
+              <a href="#features" class="btn-secondary">
+                View Features
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+
+            <div class="hero__proof" aria-label="Cyber Crypto ratings">
+              <div>
+                <strong>A+</strong>
+                <span>Security rating</span>
+              </div>
+              <div>
+                <strong>4.8</strong>
+                <span>Average review</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Market monitoring</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-label="Crypto banking dashboard preview">
+            <div class="hero__card hero__card--balance">
+              <span>Total balance</span>
+              <strong>$128,420.50</strong>
+              <small>+12.8% this month</small>
+            </div>
+            <img
+              src="./images/bank.png"
+              alt="Crypto banking illustration"
+              class="hero__image"
+            />
+            <div class="hero__card hero__card--trade">
+              <span>BTC / USDT</span>
+              <strong>$68,912</strong>
+              <small>Fast execution</small>
+            </div>
+          </div>
         </div>
-        <!-- Tab -->
-        <div class="platform__tab">
-          <div class="mb-4">
+      </section>
+
+      <section class="partners" aria-label="Supported crypto partners">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <p>Trusted infrastructure for digital asset workflows</p>
+          <div class="partners__track">
+            <img src="./images/aven.png" alt="Aven partner mark" />
+            <img src="./images/fox.png" alt="Fox partner mark" />
+            <img src="./images/goldline.png" alt="Goldline partner mark" />
+            <img src="./images/kanban.png" alt="Kanban partner mark" />
+          </div>
+        </div>
+      </section>
+
+      <section id="platform" class="section platform">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section__heading">
+            <h2>
+              Trusted <span class="text-gradient">Cryptocurrency</span>
+              Platform
+            </h2>
+            <p>
+              A focused exchange interface for buying, selling, securing, and
+              tracking crypto assets without unnecessary friction.
+            </p>
+          </div>
+
+          <div class="platform__tab">
             <ul
-              class="justify-center flex flex-wrap -mb-px text-sm font-medium text-center"
+              class="tab-list"
               id="default-styled-tab"
               data-tabs-toggle="#default-styled-tab-content"
-              data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
-              data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
               role="tablist"
             >
-              <li class="me-2" role="presentation">
+              <li role="presentation">
                 <button
-                  class="inline-block p-4 border-b-2 rounded-t-lg"
-                  id="profile-styled-tab"
-                  data-tabs-target="#styled-profile"
+                  class="tab-button"
+                  id="trading-styled-tab"
+                  data-tabs-target="#styled-trading"
                   type="button"
                   role="tab"
-                  aria-controls="profile"
-                  aria-selected="false"
+                  aria-controls="styled-trading"
+                  aria-selected="true"
                 >
-                  Profile
+                  Trading
                 </button>
               </li>
-              <li class="me-2" role="presentation">
+              <li role="presentation">
                 <button
-                  class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                  id="contact-styled-tab"
-                  data-tabs-target="#styled-contact"
+                  class="tab-button"
+                  id="security-styled-tab"
+                  data-tabs-target="#security"
                   type="button"
                   role="tab"
-                  aria-controls="contact"
+                  aria-controls="security"
                   aria-selected="false"
                 >
-                  Contact
+                  Security
                 </button>
               </li>
             </ul>
-          </div>
-          <div id="default-styled-tab-content">
-            <div
-              class="hidden p-4 rounded-lg"
-              id="styled-profile"
-              role="tabpanel"
-              aria-labelledby="profile-tab"
-            >
-              <div class="platform__content grid md:grid-cols-3 gap-10">
-                <div class="platform__item flex justify-center">
-                  <div
-                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
-                  >
-                    <a href="#">
-                      <img
-                        class="mx-auto rounded-base"
-                        src="./images/trusted_1.png"
-                        alt=""
-                      />
+
+            <div id="default-styled-tab-content">
+              <div
+                id="styled-trading"
+                role="tabpanel"
+                aria-labelledby="trading-styled-tab"
+              >
+                <div class="feature-grid">
+                  <article class="feature-card">
+                    <img src="./images/trusted_1.png" alt="" />
+                    <div>
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      <h3>Best Exchange Rate</h3>
+                      <p>
+                        Compare market liquidity and convert assets with a
+                        cleaner, more confident trading flow.
+                      </p>
+                    </div>
+                    <a href="#" aria-label="Read more about best exchange rate">
+                      <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#">
-                      <h5
-                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
-                      >
-                        Best Exchange Rate
-                      </h5>
+                  </article>
+
+                  <article class="feature-card">
+                    <img src="./images/kanban.png" alt="" />
+                    <div>
+                      <i class="fa-solid fa-chart-line"></i>
+                      <h3>Live Market Boards</h3>
+                      <p>
+                        Scan active pairs, recent movement, and portfolio
+                        signals from one organized dashboard.
+                      </p>
+                    </div>
+                    <a href="#" aria-label="Read more about live market boards">
+                      <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <p class="text-gray-500 mb-6 text-body">
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
-                  </div>
-                </div>
-                <div class="platform__item flex justify-center">
-                  <div
-                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
-                  >
-                    <a href="#">
-                      <img
-                        class="mx-auto rounded-base"
-                        src="./images/trusted_1.png"
-                        alt=""
-                      />
+                  </article>
+
+                  <article class="feature-card">
+                    <img src="./images/goldline.png" alt="" />
+                    <div>
+                      <i class="fa-solid fa-wallet"></i>
+                      <h3>Portfolio Wallet</h3>
+                      <p>
+                        Keep balances, conversion history, and top assets
+                        readable across desktop and mobile views.
+                      </p>
+                    </div>
+                    <a href="#" aria-label="Read more about portfolio wallet">
+                      <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#">
-                      <h5
-                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p class="text-gray-500 mb-6 text-body">
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
-                  </div>
-                </div>
-                <div class="platform__item flex justify-center">
-                  <div
-                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
-                  >
-                    <a href="#">
-                      <img
-                        class="mx-auto rounded-base"
-                        src="./images/trusted_1.png"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#">
-                      <h5
-                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p class="text-gray-500 mb-6 text-body">
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
-                  </div>
-                </div>
-                <div class="platform__item flex justify-center">
-                  <div
-                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
-                  >
-                    <a href="#">
-                      <img
-                        class="mx-auto rounded-base"
-                        src="./images/trusted_1.png"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#">
-                      <h5
-                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p class="text-gray-500 mb-6 text-body">
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
-                  </div>
-                </div>
-                <div class="platform__item flex justify-center">
-                  <div
-                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
-                  >
-                    <a href="#">
-                      <img
-                        class="mx-auto rounded-base"
-                        src="./images/trusted_1.png"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#">
-                      <h5
-                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p class="text-gray-500 mb-6 text-body">
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
-                  </div>
-                </div>
-                <div class="platform__item flex justify-center">
-                  <div
-                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
-                  >
-                    <a href="#">
-                      <img
-                        class="mx-auto rounded-base"
-                        src="./images/trusted_1.png"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#">
-                      <h5
-                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p class="text-gray-500 mb-6 text-body">
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
-                  </div>
+                  </article>
                 </div>
               </div>
-            </div>
-            <div
-              class="hidden p-4 rounded-lg"
-              id="styled-contact"
-              role="tabpanel"
-              aria-labelledby="contact-tab"
-            >
-              <div class="platform__content grid md:grid-cols-3 gap-10">
-                <div class="platform__item flex justify-center">
-                  <div
-                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
-                  >
-                    <a href="#">
-                      <img
-                        class="mx-auto rounded-base"
-                        src="./images/trusted_1.png"
-                        alt=""
-                      />
+
+              <div
+                class="hidden"
+                id="security"
+                role="tabpanel"
+                aria-labelledby="security-styled-tab"
+              >
+                <div class="feature-grid">
+                  <article class="feature-card">
+                    <img src="./images/trusted_1.png" alt="" />
+                    <div>
+                      <i class="fa-solid fa-shield-halved"></i>
+                      <h3>Protected Accounts</h3>
+                      <p>
+                        Security-first account patterns help users protect
+                        access while keeping the trading flow simple.
+                      </p>
+                    </div>
+                    <a href="#" aria-label="Read more about protected accounts">
+                      <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#">
-                      <h5
-                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
-                      >
-                        Best Exchange Rate
-                      </h5>
+                  </article>
+
+                  <article class="feature-card">
+                    <img src="./images/fox.png" alt="" />
+                    <div>
+                      <i class="fa-solid fa-bell"></i>
+                      <h3>Risk Alerts</h3>
+                      <p>
+                        Surface important account and market changes before
+                        they become costly trading decisions.
+                      </p>
+                    </div>
+                    <a href="#" aria-label="Read more about risk alerts">
+                      <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <p class="text-gray-500 mb-6 text-body">
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
-                  </div>
-                </div>
-                <div class="platform__item flex justify-center">
-                  <div
-                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
-                  >
-                    <a href="#">
-                      <img
-                        class="mx-auto rounded-base"
-                        src="./images/trusted_1.png"
-                        alt=""
-                      />
+                  </article>
+
+                  <article class="feature-card">
+                    <img src="./images/aven.png" alt="" />
+                    <div>
+                      <i class="fa-solid fa-lock"></i>
+                      <h3>Cold Storage Ready</h3>
+                      <p>
+                        Separate long-term assets from active trading accounts
+                        with a clearer custody model.
+                      </p>
+                    </div>
+                    <a href="#" aria-label="Read more about cold storage">
+                      <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#">
-                      <h5
-                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p class="text-gray-500 mb-6 text-body">
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
-                  </div>
-                </div>
-                <div class="platform__item flex justify-center">
-                  <div
-                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
-                  >
-                    <a href="#">
-                      <img
-                        class="mx-auto rounded-base"
-                        src="./images/trusted_1.png"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#">
-                      <h5
-                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
-                      >
-                        Best Exchange Rate
-                      </h5>
-                    </a>
-                    <p class="text-gray-500 mb-6 text-body">
-                      Convert data noise intelligent for quis lorem.
-                    </p>
-                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
-                  </div>
+                  </article>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="features" class="section exchange">
+        <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8">
+          <div class="exchange__media">
+            <img src="./images/kanban.png" alt="Crypto workflow preview" />
+            <div class="exchange__metric">
+              <strong>0.18s</strong>
+              <span>Average order response</span>
+            </div>
+          </div>
+
+          <div class="exchange__content">
+            <h2>Built for confident crypto operations.</h2>
+            <p>
+              Cyber Crypto keeps the trading experience direct: clear assets,
+              fast actions, visible risk signals, and a responsive layout that
+              stays readable on every screen.
+            </p>
+            <ul class="check-list">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Responsive dashboard-ready sections
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Reusable feature card system
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                Dark fintech theme with accessible contrast
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="mx-auto flex max-w-7xl flex-col gap-8 px-5 py-10 md:flex-row md:items-center md:justify-between lg:px-8">
+        <div>
+          <a href="#home" class="brand">
+            <span class="brand__mark">
+              <i class="fa-solid fa-bolt"></i>
+            </span>
+            <span>Cyber Crypto</span>
+          </a>
+          <p>Secure crypto exchange landing page for learning projects.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#platform">Platform</a>
+          <a href="#features">Features</a>
+          <a href="https://github.com/dat532006/Cyber_Crypto" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </div>
       </div>
-    </section>
-
-    <!-- Clients -->
-
-    <!-- Footer -->
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
   </body>

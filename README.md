@@ -1,6 +1,6 @@
 # Cyber Crypto — Cryptocurrency Landing Page
 
-Cyber Crypto is a responsive, single-page landing website for a fictional cryptocurrency exchange platform. It is built with plain HTML, Tailwind CSS via CDN, Flowbite, Font Awesome, and custom CSS, and showcases a fixed navigation bar, a crypto market hero banner, platform tabs, feature cards, and crypto-themed visual assets.
+Cyber Crypto is a responsive, single-page landing website for a fictional cryptocurrency exchange platform. It is built with plain HTML, Tailwind CSS via CDN, Flowbite, Font Awesome, and custom CSS, and showcases a polished dark fintech interface with a fixed navigation bar, crypto market hero banner, partner strip, interactive platform tabs, feature cards, workflow section, and footer.
 
 [Live Demo](https://dat532006.github.io/Cyber_Crypto/)
 
@@ -8,13 +8,16 @@ This project was built with **Nguyễn Đức Đạt**.
 
 ## Demo Sections
 
-- **Header / Navigation** — Fixed top navigation with brand logo, menu links, mobile toggle, and a call-to-action button.
-- **Hero / Market Banner** — Large crypto exchange headline with gradient text, start trading button, rating copy, and bank illustration.
-- **Trusted Platform** — Intro section for the cryptocurrency platform with centered messaging.
-- **Platform Tabs** — Flowbite-powered tab interface for switching between content groups.
-- **Feature Cards** — Crypto service cards with images, short descriptions, and Font Awesome arrow icons.
-- **Responsive Layout** — Tailwind utility classes for grid, spacing, typography, and mobile-friendly navigation.
-- **Custom Theme Styling** — Dark crypto background, gradient text, gradient button, and card sizing refinements.
+- **Header / Navigation** — Fixed glass-style navigation with brand mark, section links, mobile toggle, and a gradient call-to-action button.
+- **Hero / Market Banner** — Large crypto exchange headline with gradient text, dual call-to-action buttons, rating proof points, and bank illustration cards.
+- **Partner Strip** — Crypto-themed partner/logo row using the local image assets.
+- **Trusted Platform** — Centered platform introduction with a dark fintech visual system.
+- **Platform Tabs** — Flowbite-powered Trading and Security tabs.
+- **Feature Cards** — Distinct crypto service cards with local imagery, short descriptions, and Font Awesome action icons.
+- **Operations Section** — Supporting workflow section with a response-time metric and checklist.
+- **Footer** — Brand summary and quick links.
+- **Responsive Layout** — Tailwind utility classes plus custom CSS for desktop and mobile layouts.
+- **Custom Theme Styling** — Dark navy background, glass surfaces, gradient text, gradient buttons, hover states, and responsive card sizing.
 
 ## Tech Stack
 
