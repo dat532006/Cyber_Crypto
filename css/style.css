@@ -1,0 +1,25 @@
+body {
+  background-color: #151937;
+  color: white;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, red, blue);
+  padding: 1rem 3rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.platform__item > div {
+  width: 100%;
+  max-width: none;
+}

@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav
+        class="dark:bg-gray-900 fixed w-full z-20 top-0 start-0 dark:border-gray-600"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="https://flowbite.com/images/logo.svg"
+              class="h-8"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Cyber Crypto</span
+            >
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Get started
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Pages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Porfolio</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section class="py-[200px]">
+      <div class="container mx-auto grid md:grid-cols-2">
+        <div class="carousel__left space-y-10">
+          <h1 class="text-8xl font-bold">
+            Trsuted & Secure <span class="text-gradient">Crypto</span> Market
+            Exchange.
+          </h1>
+          <p class="text-2xl text-white opacity-75">
+            Already have a website? Try our hosting to alive it with
+            industry-leading load times.
+          </p>
+          <button class="btn-gradient">Start Trading</button>
+          <h1 class="text-7xl">A+ Rating</h1>
+          <p class="text-gray-500">
+            Avg rating 4.8 makes us world most best apps.
+          </p>
+        </div>
+        <div class="carousel__right">
+          <img src="./images/bank.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform -->
+    <section>
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h1 class="text-6xl">
+            Trusted <span class="text-gradient">Cryptocurrency</span> Platform
+          </h1>
+          <p class="text-gray-500">
+            jano has a variety of features that make it the best place to start
+            trading
+          </p>
+        </div>
+        <!-- Tab -->
+        <div class="platform__tab">
+          <div class="mb-4">
+            <ul
+              class="justify-center flex flex-wrap -mb-px text-sm font-medium text-center"
+              id="default-styled-tab"
+              data-tabs-toggle="#default-styled-tab-content"
+              data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
+              data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300"
+              role="tablist"
+            >
+              <li class="me-2" role="presentation">
+                <button
+                  class="inline-block p-4 border-b-2 rounded-t-lg"
+                  id="profile-styled-tab"
+                  data-tabs-target="#styled-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="false"
+                >
+                  Profile
+                </button>
+              </li>
+              <li class="me-2" role="presentation">
+                <button
+                  class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+                  id="contact-styled-tab"
+                  data-tabs-target="#styled-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="contact"
+                  aria-selected="false"
+                >
+                  Contact
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div id="default-styled-tab-content">
+            <div
+              class="hidden p-4 rounded-lg"
+              id="styled-profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <div class="platform__content grid md:grid-cols-3 gap-10">
+                <div class="platform__item flex justify-center">
+                  <div
+                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
+                  >
+                    <a href="#">
+                      <img
+                        class="mx-auto rounded-base"
+                        src="./images/trusted_1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <h5
+                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
+                      >
+                        Best Exchange Rate
+                      </h5>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-body">
+                      Convert data noise intelligent for quis lorem.
+                    </p>
+                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
+                  </div>
+                </div>
+                <div class="platform__item flex justify-center">
+                  <div
+                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
+                  >
+                    <a href="#">
+                      <img
+                        class="mx-auto rounded-base"
+                        src="./images/trusted_1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <h5
+                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
+                      >
+                        Best Exchange Rate
+                      </h5>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-body">
+                      Convert data noise intelligent for quis lorem.
+                    </p>
+                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
+                  </div>
+                </div>
+                <div class="platform__item flex justify-center">
+                  <div
+                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
+                  >
+                    <a href="#">
+                      <img
+                        class="mx-auto rounded-base"
+                        src="./images/trusted_1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <h5
+                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
+                      >
+                        Best Exchange Rate
+                      </h5>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-body">
+                      Convert data noise intelligent for quis lorem.
+                    </p>
+                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
+                  </div>
+                </div>
+                <div class="platform__item flex justify-center">
+                  <div
+                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
+                  >
+                    <a href="#">
+                      <img
+                        class="mx-auto rounded-base"
+                        src="./images/trusted_1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <h5
+                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
+                      >
+                        Best Exchange Rate
+                      </h5>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-body">
+                      Convert data noise intelligent for quis lorem.
+                    </p>
+                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
+                  </div>
+                </div>
+                <div class="platform__item flex justify-center">
+                  <div
+                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
+                  >
+                    <a href="#">
+                      <img
+                        class="mx-auto rounded-base"
+                        src="./images/trusted_1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <h5
+                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
+                      >
+                        Best Exchange Rate
+                      </h5>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-body">
+                      Convert data noise intelligent for quis lorem.
+                    </p>
+                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
+                  </div>
+                </div>
+                <div class="platform__item flex justify-center">
+                  <div
+                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
+                  >
+                    <a href="#">
+                      <img
+                        class="mx-auto rounded-base"
+                        src="./images/trusted_1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <h5
+                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
+                      >
+                        Best Exchange Rate
+                      </h5>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-body">
+                      Convert data noise intelligent for quis lorem.
+                    </p>
+                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden p-4 rounded-lg"
+              id="styled-contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              <div class="platform__content grid md:grid-cols-3 gap-10">
+                <div class="platform__item flex justify-center">
+                  <div
+                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
+                  >
+                    <a href="#">
+                      <img
+                        class="mx-auto rounded-base"
+                        src="./images/trusted_1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <h5
+                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
+                      >
+                        Best Exchange Rate
+                      </h5>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-body">
+                      Convert data noise intelligent for quis lorem.
+                    </p>
+                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
+                  </div>
+                </div>
+                <div class="platform__item flex justify-center">
+                  <div
+                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
+                  >
+                    <a href="#">
+                      <img
+                        class="mx-auto rounded-base"
+                        src="./images/trusted_1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <h5
+                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
+                      >
+                        Best Exchange Rate
+                      </h5>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-body">
+                      Convert data noise intelligent for quis lorem.
+                    </p>
+                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
+                  </div>
+                </div>
+                <div class="platform__item flex justify-center">
+                  <div
+                    class="bg-[#ffffff12] rounded-2xl text-center bg-neutral-primary-soft block max-w-sm p-6 rounded-base shadow-xs"
+                  >
+                    <a href="#">
+                      <img
+                        class="mx-auto rounded-base"
+                        src="./images/trusted_1.png"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <h5
+                        class="mt-6 mb-2 text-2xl font-semibold tracking-tight text-heading"
+                      >
+                        Best Exchange Rate
+                      </h5>
+                    </a>
+                    <p class="text-gray-500 mb-6 text-body">
+                      Convert data noise intelligent for quis lorem.
+                    </p>
+                    <i class="fa-solid fa-arrow-right fa-2x text-gray-500"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+
+    <!-- Footer -->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
